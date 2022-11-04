@@ -1,0 +1,60 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.grid{
+    margin: 10% 20%;
+
+    background-color: rgb(206, 212, 212);
+    height: 650px;
+    width: 650px;
+}
+
+.header{
+    text-align: center;
+    padding: 100;
+    background-color: rgb(211, 239, 241);
+    padding: 10px;
+}
+
+.monthtable{
+    display: grid;
+    grid-template-areas: 
+    "header header"
+    "sidebar sidebar";
+}
+
+.weekdays{
+    padding: 20px;
+    grid-area: header;
+    justify-content: space-between;
+    grid-template-columns: repeat(7,10px);
+    border-radius: 3px;
+    font-size: 18px ;
+    color: azure;
+    background-color: rgb(20, 46, 37);
+}
+
+.weekdaysname{
+    
+
+}
+
+.days{
+    display: grid;
+    width: 600px;
+    margin: 5px;
+    grid-template-columns: 10px 10px 10px 10px 10px 10px 10px;
+    justify-content: space-between;
+    width: 600px;
+    height: 100px;
+    align-items:space-evenly;
+}
+
+.dayindent{
+    display: flex;
+    justify-content: center;
+
+}
